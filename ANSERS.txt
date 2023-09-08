@@ -1,0 +1,41 @@
+0
+for reading a file without opening is 
+$ cat readme 
+su
+NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
+for to exit from ssh shell 
+$ exit 
+
+1 
+to read a file with hidden or - name we can use 
+$ cat ./- 
+
+
+rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
+
+2
+bandit2@bandit:~$ cat ./spaces\ in\ this\ filename 
+aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
+
+3 
+to see the hidden file we can use 
+$ ls -al 
+
+bandit3@bandit:~/inhere$ cat ./.hidden 
+2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe
+
+
+4
+you can read all the file (it's brtueforce method or try and error )
+but there is way
+using regax 
+
+$ file ./-file0*
+
+we get the data which file have asci value only
+than open copy data 
+$ cat ./-file07
+
+lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
+
+5
