@@ -39,3 +39,109 @@ $ cat ./-file07
 lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
 
 5
+
+find . -type f -size 1033c -not -executable -exec file {} + | grep ASCII
+
+ 
+
+
+bandit5@bandit:~/inhere$ find . -type f -size 1033c
+./maybehere07/.file2
+bandit5@bandit:~/inhere$ cat ./maybehere07/.file2
+P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
+                                     
+6
+i alsow don't understand this first find / -type f -user bandit7 -group bandit6 -size 33c 2>/dev/null
+This command is using the find command to search for files (-type f) in the root directory / that meet specific criteria:
+
+-user bandit7: Files owned by the user bandit7.
+-group bandit6: Files belonging to the group bandit6.
+-size 33c: Files with a size of exactly 33 bytes.
+Here's a breakdown of the command:
+
+find /: Starts the search from the root directory /.
+
+-type f: Specifies that you are looking for files (not directories or other types of files).
+
+-user bandit7: Filters files owned by the user bandit7.
+
+-group bandit6: Filters files that belong to the group bandit6.
+
+-size 33c: Filters files with a size of exactly 33 bytes. The c denotes bytes, so this filters files that are exactly 33 bytes in size.
+
+2>/dev/null: Redirects standard error (file descriptor 2) to the null device (/dev/null). This is used to suppress any error messages that might be generated during the search. If the find command encounters permission denied errors or other issues while searching certain directories, these error messages are discarded and not displayed on the terminal.
+
+The result of this command will be a list of file paths that meet all the specified criteria. If no files are found that match these criteria, the command will produce no output.
+
+This command might be part of a system or security task to find specific files owned by bandit7 in the bandit6 group that are exactly 33 bytes in size within the filesystem. The 2>/dev/null part is commonly used to clean up the output and make it more user-friendly when you don't want to see error messages during the search.
+
+
+
+
+
+
+
+
+bandit6@bandit:~$ find / type f -user bandit7 -group bandit6 -size 33c  2>/dev/null
+
+/var/lib/dpkg/info/bandit7.password
+bandit6@bandit:~$ cat /var/lib/dpkg/info/bandit7.password
+z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
+bandit6@bandit:~$ 
+
+
+
+7
+ bandit7@bandit:~$ grep "millionth" data.txt 
+millionth       TESKZC0XvTetK0S9xNwm25STk5iWrBvP
+
+
+8
+bandit8@bandit:~$ sort -u -c data.txt 
+sort: data.txt:3: disorder: ITQY9WLlsn3q168qH29wYMLQjgPH9lNP
+
+EN632PlfYiZbn3PhVK3XOGSlNInNE00t
+
+
+
+9
+bandit9@bandit:~$ strings data.txt | grep '='
+4========== the#
+5P=GnFE
+========== password
+'DN9=5
+========== is
+$Z=_
+=TU%
+=^,T,?
+W=y 
+q=W 
+X=K,
+========== G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s
+&S=(
+nd?=
+bandit9
+
+
+G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s
+G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s
+
+
+
+
+10
+
+bandit10@bandit:~$ base64 data.txt 
+VkdobElIQmhjM04zYjNKa0lHbHpJRFo2VUdWNmFVeGtVakpTUzA1a1RsbEdUbUkyYmxaRFMzcHdh
+R3hZU0VKTkNnPT0K
+bandit10@bandit:~$ base64 -d  data.txt 
+The password is 6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM
+bandit10@bandit:~$ 6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM
+6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM: command not found
+
+11
+
+i used this site get data 
+https://cryptii.com/pipes/rot13-decoder
+
+The password is JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
