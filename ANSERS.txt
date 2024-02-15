@@ -151,8 +151,17 @@ The password is JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
 
 
 12
-
-
-
+IN THIS TASK 
+i get to know that if you have a file and can zip that file and u zip the zip file like that
+tar 
+gzip 
+gzip2 
+we have this 3 zip software 
+tar -d filename 
+zip -d filename 
+gzip2 -d filename 
+like that if the filename have .bin in the end than change the name of the file 
+so we can decrypt the file and 
+we use file command every time to get to know what type of file is that 
 
 The password is wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw
